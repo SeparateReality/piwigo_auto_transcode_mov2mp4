@@ -42,7 +42,7 @@ function _cxo_transcode_and_update($image_id, $rel_mov_path): bool
 {
     // only used for .mov files
     if (!preg_match('#\.mov$#i', $rel_mov_path)) {
-        return false;
+        return true;
     }
 
     $rel_mp4 = preg_replace('#\.mov$#i', '.mp4', $rel_mov_path);
