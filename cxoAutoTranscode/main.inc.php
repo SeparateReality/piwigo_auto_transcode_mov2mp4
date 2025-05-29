@@ -40,6 +40,11 @@ function cxo_after_mov_upload_html($fileInfo): void
 /* Shared worker: transcode + DB switch + delete source                       */
 function _cxo_transcode_and_update($image_id, $rel_mov_path): bool
 {
+    // only used for .mov files
+    if (!preg_match('#\.mov$#i', $rel_mov_path)) {
+        return false;
+    }
+
     $rel_mp4 = preg_replace('#\.mov$#i', '.mp4', $rel_mov_path);
     $abs_mov = realpath(PHPWG_ROOT_PATH . ltrim($rel_mov_path, './'));
     if ($abs_mov === false) {
