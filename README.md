@@ -30,7 +30,7 @@ Works from Piwigo 11 upwards (hope so. Using v15).
 
 Optionally:
 * `libx264` / `libx265` if you expect non-H.264 MOVs
-* Writable `plugins/CXO_AutoTranscode/cxo_transcode.log` for logging
+* Writable `plugins/cxoAutoTranscode/cxo_transcode.log` for logging
 
 ---
 
