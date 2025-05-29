@@ -39,6 +39,7 @@ Optionally:
 ```bash
 cd piwigo/plugins
 git clone https://github.com/yourname/cxoAutoTranscode.git
+```
 
 1.	Log in to Administration → Plugins.
 2.	Click Activate on CXO Auto Transcode MOV.
